@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MainClassLibrary;
+using MainClassLibrary.MainSolvers;
 
 namespace PreparingForInterviews
 {
@@ -8,27 +9,37 @@ namespace PreparingForInterviews
     public class StringSolverTests
     {
 
-        AllUniqueCharSolver allUniqueCharSolver;
+        StringProblemSolver stringProblemSolver;
 
         public StringSolverTests()
         {
-            allUniqueCharSolver = new AllUniqueCharSolver();
+            stringProblemSolver = new StringProblemSolver();
         }
 
         [TestMethod]
         public void CheckIfCharsAreUnique()
         {
-            Assert.AreEqual(allUniqueCharSolver.Solve("Abcd"), true);
+            Assert.AreEqual(stringProblemSolver.CheckIfAllCharsAreUnique("Abcd"), true);
         }
 
         [TestMethod]
         public void CheckIfCharsAreNotUnique()
         {
-            Assert.AreEqual(allUniqueCharSolver.Solve("Testing"), true);
+            Assert.AreEqual(stringProblemSolver.CheckIfAllCharsAreUnique("Testing"), true);
+        }
+
+        [TestMethod]
+        public void CheckIfStringGetsReversed1()
+        {
+            Assert.AreEqual(stringProblemSolver.ReverseString("test"), "tset");
+        }
+
+        [TestMethod]
+        public void CheckIfStringGetsReversed2()
+        {
+            Assert.AreEqual(stringProblemSolver.ReverseString("12"), "21");
         }
 
 
-
-        
     }
 }
