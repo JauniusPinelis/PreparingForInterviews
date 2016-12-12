@@ -47,5 +47,26 @@ namespace MainClassLibrary.SimpleProblemSolvers
             return elements;
 
         }
+
+        public int GetEvenFibonacciNumbers(int upperNumber)
+        {
+            return GetFibonacciNumbers().TakeWhile(x => x <= upperNumber)
+                .Where((_, i) => i % 3 == 0).Sum();
+        }
+
+        public IEnumerable<int> GetFibonacciNumbers()
+        {
+            int first = 0;
+            int second = 1;
+
+            while (true)
+            {
+                var nextFibonacciNumber = first + second;
+                yield return nextFibonacciNumber;
+
+                first = second;
+                second = nextFibonacciNumber;
+            }
+        }
     }
 }

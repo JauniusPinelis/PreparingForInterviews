@@ -17,7 +17,7 @@ namespace SolutionRunner
         static void Main(string[] args)
         {
             FizzBuzzRunner runner = new FizzBuzzRunner();
-            runner.Run();
+            runner.Run();      
         }
     }
 }
