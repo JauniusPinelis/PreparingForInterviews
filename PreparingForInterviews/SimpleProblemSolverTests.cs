@@ -23,5 +23,11 @@ namespace PreparingForInterviews
         {
             Assert.AreEqual(simpleProblemSolver.Solve3And5Multiples(1000), 233168);
         }
+
+        [TestMethod]
+        public void CheckFibonacciNumberReturnsCorrect()
+        {
+            Assert.AreEqual(simpleProblemSolver.GetEvenFibonacciNumbers(4000000), 4613732);
+        }
     }
 }
