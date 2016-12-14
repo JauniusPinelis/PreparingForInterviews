@@ -1,4 +1,5 @@
-﻿using SolutionRunner.Runners;
+﻿using log4net.Config;
+using SolutionRunner.Runners;
 using System;
 using System.Collections.Generic;
 using System.Linq;

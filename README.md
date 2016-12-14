@@ -1,5 +1,6 @@
 IN PROGRESS!
 (function and test case names are not the most creative but  hopefully getting better)
+Uses log4net(still configuring it) and Unit tests for testing
 
 Practicing several technical interview questions:
 
