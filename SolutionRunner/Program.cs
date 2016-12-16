@@ -10,6 +10,12 @@ namespace SolutionRunner
 {
     class Program
     {
+
+        static void setupLogging()
+        {
+            BasicConfigurator.Configure();
+            log4net.ILog log = log4net.LogManager.GetLogger(typeof(Program));
+        }
         /// <summary>
         /// Not Everything can be easily automated with Unit tests
         /// Some algorithms will have to be run by console 
@@ -17,8 +23,12 @@ namespace SolutionRunner
         /// </summary>
         static void Main(string[] args)
         {
+            setupLogging();
+           
             FizzBuzzRunner runner = new FizzBuzzRunner();
-            runner.Run();      
+            runner.Run();
+
+              
         }
     }
 }
