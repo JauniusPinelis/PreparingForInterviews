@@ -12,6 +12,9 @@ Basic exercises:
 String manipulation exercises:
   1. Checking if all characters in a string are unique
   2. Reversing a string
+  3. Checking if strings are anagrams
 
-Bits needs to be refactored:
+Changes to be done:
   1. Refactor log4net so that I can add them to Solver classes
+  2. Code is getting a mess - sort it out.
+  3. Refactor Readme into a better format.

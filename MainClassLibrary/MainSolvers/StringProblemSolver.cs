@@ -74,5 +74,21 @@ namespace MainClassLibrary.MainSolvers
             }
             return sentence.ToString();
         }
+
+        public bool CheckIfStringsAreAnangrams(string str1, string str2)
+        {
+            if (str1.Length != str2.Length)
+                return false;
+
+            var len = str1.Length;
+
+            for (int i = 0; i < len; i++)
+            {
+                if (str1[i] != str2[len-1 - i])
+                    return false;
+            }
+
+            return true;
+        }
     }
 }

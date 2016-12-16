@@ -45,5 +45,17 @@ namespace PreparingForInterviews
         {
             Assert.AreEqual(stringProblemSolver.RemoveDublicateCharacters("abcddd"), "abcd");
         }
+
+        [TestMethod]
+        public void CheckIfStringAreAnagrams()
+        {
+            Assert.AreEqual(true, stringProblemSolver.CheckIfStringsAreAnangrams("dcba", "abcd"));
+        }
+
+        [TestMethod]
+        public void CheckIfStringAreNotAnagrams()
+        {
+            Assert.AreEqual(false, stringProblemSolver.CheckIfStringsAreAnangrams("dcbd", "abcd"));
+        }
     }
 }
