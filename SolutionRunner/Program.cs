@@ -26,9 +26,7 @@ namespace SolutionRunner
             setupLogging();
            
             FizzBuzzRunner runner = new FizzBuzzRunner();
-            runner.Run();
-
-              
+            runner.Run();   
         }
     }
 }

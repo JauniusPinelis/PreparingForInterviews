@@ -49,10 +49,26 @@ namespace MainClassLibrary.SimpleProblemSolvers
 
         }
 
+        /// <summary>
+        /// Brute Force Solution
+        /// </summary>
         public int GetEvenFibonacciNumbers(int upperNumber)
         {
-            return GetFibonacciNumbers().TakeWhile(x => x <= upperNumber)
-                .Where((_, i) => i % 3 == 0).Sum();
+            int fib1, fib2, result, sum;
+            fib1 = fib2 = 1;
+            result = sum = 0;
+
+            while (result < upperNumber)
+            {
+                if (result % 2 == 0)
+                    sum += result;
+
+                result = fib1 + fib2;
+                fib1 = fib2;
+                fib2 = result;
+            }
+
+            return sum;
         }
 
         public IEnumerable<int> GetFibonacciNumbers()

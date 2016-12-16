@@ -21,13 +21,13 @@ namespace PreparingForInterviews
         [TestMethod]
         public void CheckIf3And5ReturnsCorrect()
         {
-            Assert.AreEqual(simpleProblemSolver.Solve3And5Multiples(1000), 233168);
+            Assert.AreEqual(233168, simpleProblemSolver.Solve3And5Multiples(1000));
         }
 
         [TestMethod]
         public void CheckFibonacciNumberReturnsCorrect()
         {
-            Assert.AreEqual(simpleProblemSolver.GetEvenFibonacciNumbers(4000000), 4613732);
+            Assert.AreEqual(4613732, simpleProblemSolver.GetEvenFibonacciNumbers(4000000));
         }
     }
 }
