@@ -37,5 +37,42 @@ namespace MainClassLibrary.MainSolvers
             }
             return true;
         }
+
+
+        /// <summary>
+        /// DOES NOT WORK - FIX LATER ON
+        /// Remove dublicate characters from a string 
+        /// without using additional buffer
+        /// 
+        /// </summary>
+        public string RemoveDublicateCharacters(string input)
+        {
+            if (input.Length == 0)
+                return input;
+            int len = input.Length;
+            if (len < 2)
+                return input;
+            int tail = 1;
+
+            var sentence = input.ToCharArray();
+
+            for (int i = 1; i < len; ++i)
+            {
+                int j;
+
+                for (j = 0; j < tail; ++j)
+                {
+                    if (sentence[i] == sentence[j])
+                        break;
+                }
+
+                if (j == tail)
+                {
+                    sentence[tail] = sentence[i];
+                    ++tail;
+                }
+            }
+            return sentence.ToString();
+        }
     }
 }

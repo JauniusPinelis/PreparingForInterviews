@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SolutionRunner.Runners
 {
-    public class FizzBuzzRunner : Runner
+    public class FizzBuzzRunner 
     {
         SimpleProblemSolver solver;
 

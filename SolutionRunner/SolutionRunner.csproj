@@ -49,7 +49,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Runners\FizzBuzzRunner.cs" />
-    <Compile Include="Runners\Runner.cs" />
+    <Compile Include="Runners\StringSolverRunner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

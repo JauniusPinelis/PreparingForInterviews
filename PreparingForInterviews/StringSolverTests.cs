@@ -40,6 +40,10 @@ namespace PreparingForInterviews
             Assert.AreEqual(stringProblemSolver.ReverseString("12"), "21");
         }
 
-
+        [TestMethod]
+        public void CheckIfDublicatesGetRemoved()
+        {
+            Assert.AreEqual(stringProblemSolver.RemoveDublicateCharacters("abcddd"), "abcd");
+        }
     }
 }
