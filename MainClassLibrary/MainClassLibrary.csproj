@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data Structures\LinkedList.cs" />
     <Compile Include="MainSolvers\SimpleProblemSolver.cs" />
     <Compile Include="MainSolvers\StringProblemSolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
