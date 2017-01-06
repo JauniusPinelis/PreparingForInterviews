@@ -8,7 +8,7 @@ namespace SortingAlgortihms
 {
     public class Sorter
     {
-        public static void Exchange(ref int[] data, int pos1, int pos2)
+        private static void exchange(int[] data, int pos1, int pos2)
         {
             int temporary;
 
@@ -17,14 +17,35 @@ namespace SortingAlgortihms
             data[pos2] = temporary;
         }
 
-        public static void BubbleSort(ref int[] data)
+        public static int MinPosOfArray(int[] data, int startPos)
+        {
+            var minPos = startPos;
+
+            for (int i = startPos + 1; i < data.Length; i++)
+                if (data[i] < data[minPos])
+                    minPos = i;
+            return minPos;
+
+        }
+
+        public static void SelectionSort(int[] data)
+        {
+            for (int i = 0; i < data.Length-1; i++)
+            {
+                int minPos = MinPosOfArray(data, i);
+                if (i != minPos)
+                    exchange(data, i, minPos);
+            }
+        }
+
+        public static void BubbleSort(int[] data)
         {
            for (int i = 0; i < data.Length-1; i++)
             {
                 for (int j = 0; j < data.Length-1; j++)
                 {
                     if (data[j] > data[j+1])
-                        Exchange(ref data, j, j + 1);
+                        exchange(data, j, j + 1);
                 }
             }
         }
@@ -32,8 +53,8 @@ namespace SortingAlgortihms
         public static void Print(int[] data)
         {
             for (int i = 0; i < data.Length; i++)
-                Console.WriteLine(data[i]);
-        }  
+                Console.Write("{0} ", data[i]);
+        }
 
 
     }

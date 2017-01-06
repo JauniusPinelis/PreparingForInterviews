@@ -11,7 +11,7 @@ namespace SortingAlgortihms
         static void Main(string[] args)
         {
             var data = new int[] { 11, 5, 7, 88, 4, 0, 12 };
-            Sorter.BubbleSort(ref data);
+            Sorter.SelectionSort(data);
             Sorter.Print(data);
 
             Console.ReadLine();
