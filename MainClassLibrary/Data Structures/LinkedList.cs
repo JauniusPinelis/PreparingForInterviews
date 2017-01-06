@@ -9,44 +9,67 @@ namespace MainClassLibrary.Data_Structures
     public class LinkedList
     {
         //Empty for now   
-    }
 
-    class Node
-    {
-        Node next = null;
-        int data;
 
-        public Node(int d)
+        public class Node
         {
-            data = d;
-        }
+            public Node Next { get; set; }
+            int Data { get; }
 
-        void appendToTail(int d)
-        {
-            Node end = new Node(d);
-            Node n = this;
-            while (n.next != null)
-                n = n.next;
-            n.next = end;
-        }
-
-        Node deleteNode(Node head, int d)
-        {
-            Node n = head;
-            if (n.data == d)
+            public Node(int d)
             {
-                return head.next;
+                Data = d;
+                Next = null;
             }
-            while (n.next != null)
+
+            public void Append(int d)
             {
-                if (n.next.data == d)
+                Node end = new Node(d);
+                Node n = this;
+                while (n.Next != null)
+                    n = n.Next;
+                n.Next = end;
+            }
+
+            public Node DeleteNode(Node head, int d)
+            {
+                Node n = head;
+                if (n.Data == d)
                 {
-                    n.next = n.next.next;
-                    return head;
+                    return head.Next;
                 }
-                n = n.next;
+                while (n.Next != null)
+                {
+                    if (n.Next.Data == d)
+                    {
+                        n.Next = n.Next.Next;
+                        return head;
+                    }
+                    n = n.Next;
+                }
+                return n; // d was not found - no changes
             }
-            return head; // d was not found - no changes
+
+            public Node DeleteDublicates(Node head)
+            {
+                var tempBuffer = new List<int>();
+                Node n = head;
+
+                while (n.Next != null)
+                {
+                    if (tempBuffer.Contains(n.Next.Data))
+                    {
+                        n.Next = n.Next.Next;
+                    }
+                    else
+                    {
+                        tempBuffer.Add(n.Next.Data);
+                    }
+
+                    n = n.Next;
+                }
+                return n;
+            }
         }
     }
 }

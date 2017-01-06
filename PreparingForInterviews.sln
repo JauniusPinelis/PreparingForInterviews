@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreparingForInterviews", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainClassLibrary", "MainClassLibrary\MainClassLibrary.csproj", "{2E0BA1D7-2E5C-4B61-9074-B547766BDC4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionRunner", "SolutionRunner\SolutionRunner.csproj", "{66649DCC-1E55-4F6F-ADE9-45175E70D886}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgortihms", "SortingAlgortihms\SortingAlgortihms.csproj", "{0C1C58BB-1B22-448E-A684-008DFEBC11E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{2E0BA1D7-2E5C-4B61-9074-B547766BDC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E0BA1D7-2E5C-4B61-9074-B547766BDC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E0BA1D7-2E5C-4B61-9074-B547766BDC4D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66649DCC-1E55-4F6F-ADE9-45175E70D886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66649DCC-1E55-4F6F-ADE9-45175E70D886}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66649DCC-1E55-4F6F-ADE9-45175E70D886}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66649DCC-1E55-4F6F-ADE9-45175E70D886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C1C58BB-1B22-448E-A684-008DFEBC11E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C1C58BB-1B22-448E-A684-008DFEBC11E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C1C58BB-1B22-448E-A684-008DFEBC11E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C1C58BB-1B22-448E-A684-008DFEBC11E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
